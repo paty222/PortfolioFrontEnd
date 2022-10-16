@@ -108,11 +108,14 @@ aside {
     padding: 20px;
 }
 
-
 aside .widget {
     background: #593D36;
     height: 200px;
-    margin: 6px;
+    margin: 10px;
+}
+
+aside .widget .imagen {
+    position:relative;
 }
 
 footer {
@@ -131,11 +134,14 @@ footer .enlaces {
 }
 
 footer .enlaces a {
+    display: flex;
     flex-grow: 1;
-    background: #593D36;
-    color: #fff;
+    background: #99BF9F;
+    color: black;
+    height: vw;
     font-size: 1em;
     text-align: center;
+    align-items: center;
     text-decoration: none;
     padding: 5px;
 }
@@ -182,6 +188,13 @@ footer .redessociales a {
     aside .widget {
         flex-grow: 1;
     }
+
+    aside .widget .imagen a button {
+        border-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
 }
 
 @media screen and (max-width:600px) {
